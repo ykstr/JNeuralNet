@@ -16,10 +16,12 @@ public class WeightedNeuron extends Neuron{
     @Override
     public double calculateValue() {
         double result = 0;
+        double weightSum = 0;
         for(Map.Entry<Neuron, Double> entry : weightedInputs.entrySet()){
             result+= entry.getKey().calculate()*entry.getValue();
+            weightSum+= entry.getValue();
         }
-        return result;
+        return result/weightSum;
     }
 
     public void addInput(Neuron input, double weight){
