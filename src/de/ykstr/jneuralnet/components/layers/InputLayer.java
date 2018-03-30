@@ -1,4 +1,9 @@
 package de.ykstr.jneuralnet.components.layers;
 
-public class InputLayer {
+import de.ykstr.jneuralnet.components.neurons.InputNeuron;
+
+import java.util.ArrayList;
+
+public class InputLayer extends AbstractLayer<InputNeuron>{
+
 }
