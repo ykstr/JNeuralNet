@@ -12,7 +12,7 @@ public abstract class Neuron {
     protected boolean isCacheCurrent = false;
 
     public Neuron(IActivationFunction f){
-        this.activationFunction = f;
+        setActivationFunction(f);
     }
 
     public double calculate() {
@@ -38,7 +38,7 @@ public abstract class Neuron {
 
     public void setValue(double value) {
         this.value = value;
-        setCacheCurrent(false);
+        setInputCurrent(false);
     }
 
     public boolean isInputCurrent() {
@@ -55,6 +55,7 @@ public abstract class Neuron {
 
     public void setActivationFunction(IActivationFunction activationFunction) {
         this.activationFunction = activationFunction;
+        setCacheCurrent(false);
     }
 
     public double getCachedActivationValue() {
@@ -63,7 +64,6 @@ public abstract class Neuron {
 
     public void setCachedActivationValue(double cachedActivationValue) {
         this.cachedActivationValue = cachedActivationValue;
-        setCacheCurrent(false);
     }
 
     public boolean isCacheCurrent() {
