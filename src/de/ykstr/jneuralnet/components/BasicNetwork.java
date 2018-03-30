@@ -23,12 +23,12 @@ public class BasicNetwork {
         this.f = f;
     }
 
-    public void addInput(InputNeuron n){
+    public void addInput(InputNeuron n, double inputWeight){
         input.addNeuron(n);
         WeightedNeuron outputNeuron = new WeightedNeuron(f);
         outputNeuron.addMultipleInputs(hidden.getNeurons(), 1.0/hidden.getNeurons().size());
         for(WeightedNeuron hiddenNeuron : hidden.getNeurons()){
-            hiddenNeuron.addInput(n, 1);
+            hiddenNeuron.addInput(n, inputWeight);
         }
         output.addNeuron(outputNeuron);
 
