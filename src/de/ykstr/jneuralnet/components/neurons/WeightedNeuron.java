@@ -30,17 +30,17 @@ public class WeightedNeuron extends Neuron{
         addInput(input,0);
     }
 
-    public void addMultipleInputs(ArrayList<Neuron> inputs, double averageWeight){
+    public void addMultipleInputs(ArrayList<? extends Neuron> inputs, double averageWeight){
         for(Neuron input : inputs){
             addInput(input, averageWeight);
         }
     }
 
-    public void addMultipleInputs(ArrayList<Neuron> inputs){
+    public void addMultipleInputs(ArrayList<? extends Neuron> inputs){
         addMultipleInputs(inputs,0);
     }
 
-    public void addMultipleInputs(ArrayList<Neuron> inputs, ArrayList<Double> weights){
+    public void addMultipleInputs(ArrayList<? extends Neuron> inputs, ArrayList<Double> weights){
         for(int i = 0;i<inputs.size(); i++){
             addInput(inputs.get(i), weights.get(i));
         }
