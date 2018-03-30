@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class WeightedNeuron extends Neuron{
-    private HashMap<Neuron, Double> weightedInputs;
+    private HashMap<Neuron, Double> weightedInputs = new HashMap<>();
 
     public WeightedNeuron(IActivationFunction f) {
         super(f);
@@ -18,7 +18,8 @@ public class WeightedNeuron extends Neuron{
         double result = 0;
         double weightSum = 0;
         for(Map.Entry<Neuron, Double> entry : weightedInputs.entrySet()){
-            result+= entry.getKey().calculate()*entry.getValue();
+            double neuronValue = entry.getKey().calculate();
+            result+= neuronValue*entry.getValue();
             weightSum+= entry.getValue();
         }
         return result/weightSum;
