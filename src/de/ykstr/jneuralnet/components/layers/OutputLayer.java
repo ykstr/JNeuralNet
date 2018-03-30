@@ -5,6 +5,8 @@ import de.ykstr.jneuralnet.functions.IActivationFunction;
 
 public class OutputLayer extends AbstractLayer<WeightedNeuron>{
 
+    public OutputLayer(){}
+
     public OutputLayer(int size, IActivationFunction f){
         super();
         for(int i = 0; i<size; i++){
