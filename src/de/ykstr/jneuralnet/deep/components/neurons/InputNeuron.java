@@ -1,6 +1,6 @@
-package de.ykstr.jneuralnet.components.neurons;
+package de.ykstr.jneuralnet.deep.components.neurons;
 
-import de.ykstr.jneuralnet.functions.IActivationFunction;
+import de.ykstr.jneuralnet.deep.functions.IActivationFunction;
 
 public class InputNeuron extends Neuron{
     public InputNeuron(IActivationFunction f, double value) {

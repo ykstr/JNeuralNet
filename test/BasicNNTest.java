@@ -1,10 +1,6 @@
-import de.ykstr.jneuralnet.components.BasicNetwork;
-import de.ykstr.jneuralnet.components.layers.InputLayer;
-import de.ykstr.jneuralnet.components.neurons.InputNeuron;
-import de.ykstr.jneuralnet.components.neurons.WeightedNeuron;
-import de.ykstr.jneuralnet.functions.LinearActivation;
-
-import java.util.ArrayList;
+import de.ykstr.jneuralnet.deep.components.BasicNetwork;
+import de.ykstr.jneuralnet.deep.components.neurons.InputNeuron;
+import de.ykstr.jneuralnet.deep.functions.LinearActivation;
 
 public class BasicNNTest {
     public static void main(String[] args) {

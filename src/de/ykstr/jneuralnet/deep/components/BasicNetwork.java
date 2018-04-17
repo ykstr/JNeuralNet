@@ -1,12 +1,11 @@
-package de.ykstr.jneuralnet.components;
+package de.ykstr.jneuralnet.deep.components;
 
-import de.ykstr.jneuralnet.components.layers.InputLayer;
-import de.ykstr.jneuralnet.components.layers.OutputLayer;
-import de.ykstr.jneuralnet.components.neurons.InputNeuron;
-import de.ykstr.jneuralnet.components.neurons.Neuron;
-import de.ykstr.jneuralnet.components.neurons.WeightedNeuron;
-import de.ykstr.jneuralnet.functions.IActivationFunction;
-import de.ykstr.jneuralnet.functions.LinearActivation;
+import de.ykstr.jneuralnet.deep.components.layers.InputLayer;
+import de.ykstr.jneuralnet.deep.components.layers.OutputLayer;
+import de.ykstr.jneuralnet.deep.components.neurons.InputNeuron;
+import de.ykstr.jneuralnet.deep.components.neurons.Neuron;
+import de.ykstr.jneuralnet.deep.components.neurons.WeightedNeuron;
+import de.ykstr.jneuralnet.deep.functions.IActivationFunction;
 
 import java.util.ArrayList;
 

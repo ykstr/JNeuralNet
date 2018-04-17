@@ -1,7 +1,6 @@
-package de.ykstr.jneuralnet.components.layers;
+package de.ykstr.jneuralnet.deep.components.layers;
 
-import de.ykstr.jneuralnet.components.neurons.Neuron;
-import de.ykstr.jneuralnet.components.neurons.WeightedNeuron;
+import de.ykstr.jneuralnet.deep.components.neurons.Neuron;
 
 import java.util.ArrayList;
 
