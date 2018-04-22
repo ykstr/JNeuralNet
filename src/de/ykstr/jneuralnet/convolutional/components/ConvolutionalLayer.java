@@ -1,11 +1,9 @@
 package de.ykstr.jneuralnet.convolutional.components;
 
 import de.ykstr.jneuralnet.util.NNMath;
-import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;
-import java.util.BitSet;
 
 public class ConvolutionalLayer {
 
@@ -131,6 +129,16 @@ public class ConvolutionalLayer {
             }
         }
         return result;
+    }
+
+    public void iterate(Function3D function){
+        for(int x = 0; x < getWidth(); x++){
+            for(int y = 0; y < getHeight(); y++){
+                for(int z = 0; z < getDepth(); z++){
+                    function.apply(x,y,z, get(x,y,z));
+                }
+            }
+        }
     }
 
     /**

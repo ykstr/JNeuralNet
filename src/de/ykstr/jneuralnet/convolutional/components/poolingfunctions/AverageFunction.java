@@ -12,7 +12,7 @@ public class AverageFunction implements PoolingFunction{
                 }
             }
         }
-        System.out.printf("result = %f, counter = %d%n",result,counter);
+        System.out.printf("result = %apply, counter = %d%n",result,counter);
         return result/counter;
     }
 }
